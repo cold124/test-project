@@ -5,6 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.*;
 public class register extends JFrame implements ActionListener
 {
+	JLabel l=new JLabel("REGISTRATION FORM");
 	JLabel l1=new JLabel("NAME");
 	JLabel l2=new JLabel("PASSWORD");
 	JLabel l3=new JLabel("SELECT COUNTRY");
@@ -21,6 +22,9 @@ public class register extends JFrame implements ActionListener
 		this.setLayout(null);
 		this.setVisible(true);
 		this.setSize(700,600);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setTitle("REGISTRATION FORM");
+		l.setBounds(120,60,400,40);
 		l1.setBounds(100,100,200,40);
 		l2.setBounds(100,200,200,40);
 		l3.setBounds(100,300,200,40);
